@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 //======
-
+const userRoute= require('./route/UserRoute')
 const customerRoute = require("./route/CustomerRoute");
 //======
 
@@ -29,7 +29,9 @@ mongoose
 
 app.post("/", (req, res) => {
   console.log(req.body);
-  res.json({ data: "suck" });
+  res.json({ data: "it works... it works.... " });
 });
 
 app.use("/api/v1/customer", customerRoute); // http://localhost:3000/api/v1
+
+app.use('/api/v1/user',userRoute);
