@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-require("dotenv").config();
+require("dotenv").config(); 
 mongoose.set("strictQuery", true);
 const port = process.env.SERVER_PORT;
 

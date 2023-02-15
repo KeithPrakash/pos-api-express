@@ -1,4 +1,3 @@
-const mongoose= require('mongoose');
 const CustomerSchema= require('../model/Customer');
 
 const saveCustomer=(req,res)=>{
